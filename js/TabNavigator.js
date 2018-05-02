@@ -1,9 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { TabNavigator, TabBarBottom } from 'react-navigation'; // Version can be specified in package.json
+import { TabNavigator, TabBarBottom } from 'react-navigation'; 
 
-import HomeScreen from './screens/HomeScreen';
+import HomeNavigator from './navigators/HomeNavigator';
+
+// import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import MarketScreen from './screens/MarketScreen';
 import CompanyScreen from './screens/CompanyScreen';
@@ -11,7 +13,7 @@ import PersonalScreen from './screens/PersonalScreen';
 
 export default TabNavigator(
   {
-    Home: { screen: HomeScreen },
+    Home: { screen: HomeNavigator },
     Product: { screen: ProductScreen },
     Market: { screen: MarketScreen },
     Company: { screen: CompanyScreen },
