@@ -1,5 +1,6 @@
-import * as types from './ActionTypes';
+import Toast from 'react-native-root-toast';
 
+import * as types from './ActionTypes';
 import HomeModel from '../models/HomeModel';
 import fetchWithTimeout from '../utils/fetchWithTimeout';
 
@@ -13,6 +14,7 @@ export function fetchData(date) {
         let homeModel = new HomeModel();
         homeModel.fetchLocalData(date).then((data) => {
             console.log('already the latest data!');
+            Toast.show('已经是最新数据');
             dispatch(fetchSucceed(data, date));
         }, (localData) => {
             console.log('>>>>>>>>>>>the url is: ' + url)
@@ -22,6 +24,7 @@ export function fetchData(date) {
                 console.log('>>>>>>>>>>>>the json is: ' + JSON.stringify(json))
                 if (isValidData(json)) {
                     console.log('data is valid, cache it');
+                    Toast.show('数据刷新成功');
                     let timestamp=new Date().getTime();
                     // saveToLocal(json, timestamp);
                     dispatch(fetchSucceed(json, timestamp));
