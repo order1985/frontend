@@ -12,11 +12,9 @@ class SectionList extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log('>>>>>>>>>>>>>>>>in SectionList the props is: ' + this.props.navigation)
     }
 
     render() {
-        console.log('>>>>>>>>>>>>>the data is: ' + JSON.stringify(this.props.data));
         return (
             <FlatList data={this.props.data} renderItem={this._renderItem}>
             </FlatList>

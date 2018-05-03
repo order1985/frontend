@@ -5,6 +5,7 @@ import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation';
 
 import HomeScreen from '../screens/HomeScreen';
 import MarketScreen from '../screens/MarketScreen';
+import PersonalScreen from '../screens/PersonalScreen';
 import WebScreen from '../screens/WebScreen';
 
 export default HomeNavigator = StackNavigator(
@@ -19,7 +20,11 @@ export default HomeNavigator = StackNavigator(
 
         Web: {
             screen: WebScreen
-        }
+        },
+
+        Personal: {
+            screen: PersonalScreen
+        },
     },
     {
     initialRouteName: 'Home',

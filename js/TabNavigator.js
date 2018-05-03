@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { TabNavigator, TabBarBottom } from 'react-navigation'; 
+import {Provider} from 'react-redux';
 
 import HomeNavigator from './navigators/HomeNavigator';
 
@@ -10,6 +11,7 @@ import ProductScreen from './screens/ProductScreen';
 import MarketScreen from './screens/MarketScreen';
 import CompanyScreen from './screens/CompanyScreen';
 import PersonalScreen from './screens/PersonalScreen';
+import {store} from './store/index';
 
 export default TabNavigator(
   {

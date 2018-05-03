@@ -8,7 +8,7 @@ import SectionList from '../common/SectionList';
 class HomeActivityArea extends React.Component {
     constructor(props) {
         super(props);
-        console.log('>>>>>>>>>>>>>>>>in HomeActivityArea the props is: ' + this.props.navigation)
+        
         this.data = [
                 {
                     key: '1',

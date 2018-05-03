@@ -26,7 +26,6 @@ class SectionListItem extends React.Component {
     }
 
     _onPress() {
-        console.log('>>>>>>>>>>>>the url is: ' + this.props.sourceData.url)
         if (this.props.sourceData.key % 2 === 0)
             this.props.navigation.navigate('Market', {
                 url: this.props.sourceData.url
