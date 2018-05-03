@@ -50,12 +50,6 @@ export default class SignInForm extends React.Component {
           autoCapitalize={'none'}
           autoCorrect={false}
         />
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={styles.btnEye}
-          onPress={this.showPass}>
-          <Image source={eyeImg} style={styles.iconEye} />
-        </TouchableOpacity>
       </KeyboardAvoidingView>
     );
   }
@@ -67,7 +61,8 @@ const DEVICE_HEIGHT = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   btnEye: {
     position: 'absolute',

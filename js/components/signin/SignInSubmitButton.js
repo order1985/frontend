@@ -97,7 +97,7 @@ export default class SignInSubmitButton extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    top: -95,
+    // top: -95,
     alignItems: 'center',
     justifyContent: 'flex-start',
   },

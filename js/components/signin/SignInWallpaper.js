@@ -15,10 +15,13 @@ export default class SignInWallpaper extends Component {
   }
 }
 
+const DEVICE_WIDTH = Dimensions.get('window').width;
+const DEVICE_HEIGHT = Dimensions.get('window').height;
+
 const styles = StyleSheet.create({
   picture: {
     flex: 1,
-    width: null,
-    height: null
+    width: DEVICE_WIDTH,
+    height: DEVICE_HEIGHT
   },
 });
