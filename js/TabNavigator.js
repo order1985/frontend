@@ -11,12 +11,14 @@ import ProductScreen from './screens/ProductScreen';
 import MarketScreen from './screens/MarketScreen';
 import CompanyScreen from './screens/CompanyScreen';
 import PersonalScreen from './screens/PersonalScreen';
+import PDFScreen from './screens/PDFScreen';
 import {store} from './store/index';
 
 export default TabNavigator(
   {
     Home: { screen: HomeNavigator },
-    Product: { screen: ProductScreen },
+    // Product: { screen: ProductScreen },
+    Product: { screen: PDFScreen },
     Market: { screen: MarketScreen },
     Company: { screen: CompanyScreen },
     Personal: { screen: PersonalScreen },
