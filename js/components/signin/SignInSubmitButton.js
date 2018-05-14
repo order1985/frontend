@@ -11,7 +11,6 @@ import {
   Alert,
   View,
 } from 'react-native';
-// import {Actions, ActionConst} from 'react-native-router-flux';
 
 import spinner from '../../../resources/images/signin/loading.gif';
 
@@ -42,9 +41,9 @@ export default class SignInSubmitButton extends React.Component {
       easing: Easing.linear,
     }).start();
 
-    setTimeout(() => {
-      this._onGrow();
-    }, 2000);
+    // setTimeout(() => {
+    //   this._onGrow();
+    // }, 2000);
 
     // setTimeout(() => {
     //   Actions.secondScreen();
@@ -97,7 +96,6 @@ export default class SignInSubmitButton extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // top: -95,
     alignItems: 'center',
     justifyContent: 'flex-start',
   },

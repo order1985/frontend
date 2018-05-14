@@ -6,6 +6,7 @@ import {
   StatusBar,
   StyleSheet,
   View,
+  ScrollView
 } from 'react-native';
 
 import SignInWallpaper from '../components/signin/SignInWallpaper';
@@ -22,12 +23,13 @@ export default class SignInScreen extends React.Component {
 
   render() {
     return (
-      <SignInWallpaper>
-        <SignInLogo />
-        <SignInForm />
-        <SignupSection />
-        <SignInSubmitButton />
-      </SignInWallpaper>
+        
+        <SignInWallpaper>
+            <SignInLogo />
+            <SignInForm />
+            <SignupSection />
+            <SignInSubmitButton />
+        </SignInWallpaper>
     );
   }
 
